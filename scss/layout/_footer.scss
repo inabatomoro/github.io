@@ -1,0 +1,43 @@
+footer{
+  background-color: cl(primary);
+  color: cl(white);
+  border-top: solid 1px #6E6E6E;
+}
+
+
+.nav-list{
+  @include overTab{
+    display: flex;
+    justify-content: center;
+  }
+  margin-bottom: 40px;
+
+  .list-item{
+    @include overTab{
+
+      padding-top: 62px;
+      padding-bottom: 62px;
+    }
+    margin-top: 20px;
+    
+    text-align: center;
+    > a{
+      color: cl(white);
+      font-size: 16px;
+      @include overTab{
+        padding-left: 40px;
+      }
+    }
+  }
+}
+.footer-img{
+  width: 190px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.copyrihgt{
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+
+}

@@ -1,0 +1,39 @@
+.cmn-section{
+  background-color: cl(black);
+  padding-top: 80px;
+}
+.cmn-title{
+  color: cl(white);
+  text-align: center;
+  
+  .main{
+    font-size: 32px;
+    display: block;
+  }
+  .sub{
+    font-size: 16px;
+    @include TimesNewRoman;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-transform:capitalize;
+    &.-faq{
+      text-transform: uppercase;
+    }
+  }
+}
+.cmn-limk{
+  a{
+  width: 155px;
+  height: 37px;
+  background-color: cl(gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-top: 60px;
+  color: cl(white);
+  }
+}

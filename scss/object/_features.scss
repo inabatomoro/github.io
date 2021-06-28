@@ -1,0 +1,68 @@
+
+.feature-item{
+  display: flex;
+  flex-flow:column-reverse;
+  @include overTab{
+  display: flex;
+  }
+  +.feature-item{
+    padding-top: 60px;
+    @include overTab{
+      padding-top: 0;
+    }
+
+  }
+color: cl(white);
+&:nth-child(odd){
+  @include overTab{
+    flex-flow:row-reverse;
+  }
+  .feature-text{
+    @include overTab{
+    margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+}
+  &:nth-child(even){
+    @include overTab{
+      flex-flow: row;
+    .feature-text{
+      margin-right: 40px;
+      margin-left: 40px;
+      
+    }
+  }
+}
+a{
+  color: cl(white);
+
+}
+}
+
+.feature-text{
+  padding-right: 28px;
+  padding-left: 28px;
+  padding-top: 40px;
+  @include overTab{
+  flex: 1;
+  padding-bottom: 40px;
+  padding-right: 0;
+  padding-left: 0;
+  }
+}
+
+  .text-title{
+    color: cl(baige);
+    font-size: 28px;
+  }
+  .text-cont{
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+.feature-img{
+  @include overTab{
+  width: percentage(640/1280);
+}
+}
